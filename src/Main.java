@@ -5,5 +5,6 @@ public class Main {
         Point p2=new Point(1,1);
         Segment s=new Segment(p1,p2);
         System.out.println(s.length());
+        System.out.println(s.length());
     }
 }
