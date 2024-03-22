@@ -1,10 +1,11 @@
+
 public class Main {
     public static void main(String[] args) {
 
-        Point p1=new Point(0,0);
-        Point p2=new Point(1,1);
-        Segment s=new Segment(p1,p2);
-        System.out.println(s.length());
-        System.out.println(s.length());
+        Segment segment = new Segment(new Point(0,0),new Point(100,100));
+        System.out.println(segment.toSvg());
+        Segment[] segments = Segment.perpendicularSegments(segment,new Point(100/2,100/2));
+        System.out.println(segment.length());
+        System.out.println(segments[0].toSvg());
     }
 }
